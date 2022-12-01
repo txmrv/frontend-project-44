@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "[![Actions Status](https://github.com/txmrv/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/txmrv/frontend-project-44/actions)",
   "main": "index.js",
+  "bin": {
+    "brain-games": "./bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/txmrv/frontend-project-44.git"
   },
-  "author": "",
+  "author": "Pavel Tikhomirov",
+  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/txmrv/frontend-project-44/issues"
