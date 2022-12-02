@@ -5,6 +5,7 @@
   "main": "index.js",
   "bin": {
     "brain-games": "./bin/brain-games.js",
+    "brain-calc": "./bin/brain-calcw.js",
     "brain-even": "./bin/brain-even.js"
   },
   "scripts": {
