@@ -1,4 +1,11 @@
-import greet, { ask, say } from './cli.js';
+import { ask, say } from './cli.js';
+
+export const greet = () => {
+  say('Welcome to the Brain Games!');
+  const userName = ask('May I have your name? ');
+  say(`Hello, ${userName}!`);
+  return userName;
+};
 
 const startGameLoop = (getChallenge, roundsCount = 3) => {
   for (let i = 0; i < roundsCount; i += 1) {
