@@ -1,4 +1,4 @@
-import getRandomInt from '../utils.js';
+import { getRandomInt } from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
