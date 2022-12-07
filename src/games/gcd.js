@@ -1,4 +1,4 @@
-import { getRandomInt } from '../utils.js';
+import { getRandomIntBetween } from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -11,7 +11,7 @@ const getGCD = (a, b) => {
 
     if (remainder === 0) {
       const divisor = smallest / i;
-      const isCommonDivisor = greatest % divisor === 0;
+      const isCommonDivisor = (greatest % divisor) === 0;
 
       if (isCommonDivisor) {
         return divisor;
@@ -23,9 +23,10 @@ const getGCD = (a, b) => {
 };
 
 const getChallenge = () => {
+  const minNumber = 1;
   const maxNumber = 100;
-  const a = getRandomInt(maxNumber);
-  const b = getRandomInt(maxNumber);
+  const a = getRandomIntBetween(minNumber, maxNumber);
+  const b = getRandomIntBetween(minNumber, maxNumber);
 
   const question = `${a} ${b}`;
   const answer = `${getGCD(a, b)}`;
